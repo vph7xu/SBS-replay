@@ -50,6 +50,7 @@ void replay_gen_mc(const char* filebase, uint genconfig, uint nev = -1, TString 
   gHaApps->Add(bigbite);
   
   SBSEArm *harm = new SBSEArm("sbs","Hadron Arm with HCal");
+  harm->AddDetector( new SBSGEMSpectrometerTracker("gem", "SBS GEM tracker") ); // not sure this will work
   harm->AddDetector( new SBSHCal("hcal","HCAL") );
   gHaApps->Add(harm);
 
@@ -70,7 +71,7 @@ void replay_gen_mc(const char* filebase, uint genconfig, uint nev = -1, TString 
     exit(-1);
   }
   
-  THaRunBase *run = new SBSSimFile(run_file.Data(), "gmn", "");
+  THaRunBase *run = new SBSSimFile(run_file.Data(), experiment, "");
   run->SetFirstEvent(0);
 
   cout << "Number of events to replay (-1=all)? ";

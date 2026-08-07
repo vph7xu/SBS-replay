@@ -111,8 +111,8 @@ sbs.frontconstraint_y0 = 0.031522
 sbs.backconstraint_x0 = -0.0634159
 sbs.backconstraint_y0 = -0.000809465
 
-sbs.frontconstraintwidth_x = 1.0
-sbs.frontconstraintwidth_y = 0.6
+sbs.frontconstraintwidth_x = 0.75
+sbs.frontconstraintwidth_y = 0.3
 sbs.backconstraintwidth_x = 0.31547
 sbs.backconstraintwidth_y = 0.29033
 
@@ -149,8 +149,8 @@ sbs.frontconstraint_y0 = 0.0449271
 sbs.backconstraint_x0 = -0.0465962
 sbs.backconstraint_y0 = 0.0998812
 
-sbs.frontconstraintwidth_x = 1.0
-sbs.frontconstraintwidth_y = 0.6
+sbs.frontconstraintwidth_x = 0.75
+sbs.frontconstraintwidth_y = 0.3
 sbs.backconstraintwidth_x = 0.432134
 sbs.backconstraintwidth_y = 0.470129
 
@@ -187,20 +187,20 @@ sbs.frontconstraint_y0 = 0.0436534
 sbs.backconstraint_x0 = -0.0466736
 sbs.backconstraint_y0 = 0.0837408
 
-sbs.frontconstraintwidth_x = 1.0
+sbs.frontconstraintwidth_x = 0.75
 sbs.frontconstraintwidth_y = 0.3
 sbs.backconstraintwidth_x = 0.448494
 sbs.backconstraintwidth_y = 0.489273
 
 -------[ 2023-03-08 00:00:00 ] #New Constraints for GEN4 kinematic
 
-sbs.frontconstraintwidth_x = 1.0 # m
-sbs.frontconstraintwidth_y = 0.6 # m
+sbs.frontconstraintwidth_x = 0.75 # m
+sbs.frontconstraintwidth_y = 0.3 # m
 
 ------[ 2023-09-01 00:00:00 ] # reverting to old constraint centering: 
 
-sbs.frontconstraintwidth_x = 1.0 # m
-sbs.frontconstraintwidth_y = 0.6 # m
+sbs.frontconstraintwidth_x = 0.75 # m
+sbs.frontconstraintwidth_y = 0.3 # m
 
 sbs.backconstraintwidth_x = 0.28 # m
 sbs.backconstraintwidth_y = 0.28 # m
@@ -242,8 +242,8 @@ sbs.frontconstraint_y0 = 0.0517615
 sbs.backconstraint_x0 = -0.0486764
 sbs.backconstraint_y0 = -0.000428677
 
-sbs.frontconstraintwidth_x = 1.0
-sbs.frontconstraintwidth_y = 0.6
+sbs.frontconstraintwidth_x = 0.75
+sbs.frontconstraintwidth_y = 0.3
 sbs.backconstraintwidth_x = 0.423403
 sbs.backconstraintwidth_y = 0.394051
 

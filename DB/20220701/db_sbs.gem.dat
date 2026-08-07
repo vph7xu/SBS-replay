@@ -122,9 +122,9 @@ sbs.gem.m29.apvmap = 1
 #sbs.gem.threshold_stripsum = 400.
 #sbs.gem.threshold_clustersum 800.
 
-sbs.gem.threshold_sample = 50.0
-sbs.gem.threshold_stripsum = 250.
-sbs.gem.threshold_clustersum 500.
+sbs.gem.threshold_sample = 80.0
+sbs.gem.threshold_stripsum = 300.
+sbs.gem.threshold_clustersum 600.
 
 sbs.gem.ADCasym_cut = 0.8 
 sbs.gem.deltat_cut = 25.0
@@ -162,11 +162,11 @@ sbs.gem.max2Dhits = 25000 # per-module
 ############### Parameters searched by SBSGEMSpectrometerTracker::ReadDatabase() ######################
 
 # parameters controlling tracking:
-sbs.gem.minhitsontrack = 4 #4
+sbs.gem.minhitsontrack = 3#4
 
 sbs.gem.maxhitcombos = 10000 #25000 for final &  50000 for first alignments
 sbs.gem.maxhitcombos_inner = 25000 #25000 for final & 50000 for first alignments
-sbs.gem.maxhitcombos_total = 1.e20
+sbs.gem.maxhitcombos_total = 1.e20 #e20 for a test
 
 sbs.gem.tryfasttrack = 0 #1  #May get errors before a good alignment. So may be help to turn off during alignment. 
 
@@ -223,7 +223,7 @@ sbs.gem.ypfp_max = 0.12
 
 # # basic flags controlling decoding:
 sbs.gem.pedestalmode = 0
-sbs.gem.commonmode_flag = 2 # 1 = Danning, 0 = sorting, 2 = histogramming
+sbs.gem.commonmode_flag = 0 # 1 = Danning, 0 = sorting, 2 = histogramming
 sbs.gem.chan_cm_flags = 640 # defines the "dummy" reference channel for storing the cm_enable and build_all_samples flags -(40 x 16) "sbsvtp2" and "sbsvtp4"currently has 36 and 20 MPDs respectively right now. 
 sbs.gem.commonmode_nstriplo = 20 # for sorting method
 sbs.gem.commonmode_nstriphi = 20 # for sorting method
@@ -249,9 +249,6 @@ sbs.gem.dump_geometry_info = 0
 sbs.gem.efficiency_bin_width_1D = 0.02
 sbs.gem.efficiency_bin_width_2D = 0.02
 sbs.gem.commonmode_range_nsigma = 5.0
-
-
-
 
 # these may need adjusting:
 sbs.gem.usestriptimingcut = 1
@@ -5013,7 +5010,7 @@ sbs.gem.m28.modulegain = 1
 sbs.gem.m29.modulegain = 0.813536
 
 -------[ 2023-01-15 00:00:00 ]
-sbs.gem.minhitsontrack = 4 #4
+sbs.gem.minhitsontrack = 3 #4
 
 # ###################### TIME-DEPENDENT PEDESTAL FILES ##########################
 
@@ -5042,7 +5039,6 @@ sbs.gem.cmfile = gemped/db_cmr_sbs_gem_run1549.dat
 sbs.gem.pedfile = gemped/daq_ped_sbs_gem_run1664.dat
 sbs.gem.cmfile = gemped/db_cmr_sbs_gem_run1664.dat
 
-
 -------[ 2022-10-04 14:00:00 ]
 sbs.gem.pedfile = gemped/daq_ped_sbs_gem_run1653.dat
 sbs.gem.cmfile = gemped/db_cmr_sbs_gem_run1653.dat
@@ -5055,7 +5051,7 @@ sbs.gem.cmfile = gemped/db_cmr_sbs_gem_run1899.dat
 sbs.gem.pedfile = gemped/daq_ped_sbs_gem_run4135.dat
 sbs.gem.cmfile = gemped/db_cmr_sbs_gem_run4135.dat
 
--------[ 2023-09-20 19:00:00 ] 
+-------[ 2023-09-15 19:00:00 ] #it was dated to 09-20 but I am changing it to 09-15 since the first sbs run in 4b was taken on 16th
 sbs.gem.pedfile = gemped/daq_ped_sbs_gem_run5228.dat
 sbs.gem.cmfile = gemped/db_cmr_sbs_gem_run5228.dat
 
